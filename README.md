@@ -23,7 +23,7 @@
 npx skills add try-suming/suming-first-principles
 ```
 
-当前版本：0.3.3
+当前版本：0.3.4
 
 ## 效果示例
 

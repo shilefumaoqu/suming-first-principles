@@ -1,6 +1,6 @@
 {
   "name": "suming-first-principles",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "owner": "Ye",
   "updated_at": "2026-09-20",
   "status": "active",
@@ -34,7 +34,14 @@
       {
         "path": "docs/assets/first-principles-flow.svg",
         "alt": "第一性原理六步推导流程",
-        "role": "overview"
+        "role": "overview",
+        "locale": "zh-CN"
+      },
+      {
+        "path": "docs/assets/first-principles-flow-en.svg",
+        "alt": "Six-step first-principles reasoning flow",
+        "role": "overview",
+        "locale": "en"
       }
     ]
   }
