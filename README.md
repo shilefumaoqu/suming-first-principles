@@ -7,9 +7,9 @@
 <p align="center">从真实痛点和基本事实重建可验证方案，而不是被现成做法牵着走。</p>
 
 <p align="center">
-  <a href="https://github.com/try-suming/suming-first-principles/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/try-suming/suming-first-principles?display_name=tag&sort=semver"></a>
-  <a href="https://github.com/try-suming/suming-first-principles/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/try-suming/suming-first-principles?style=flat-square"></a>
-  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/try-suming/suming-first-principles?style=flat-square"></a>
+  <a href="https://github.com/shilefumaoqu/suming-first-principles/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/shilefumaoqu/suming-first-principles?display_name=tag&sort=semver"></a>
+  <a href="https://github.com/shilefumaoqu/suming-first-principles/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/shilefumaoqu/suming-first-principles?style=flat-square"></a>
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/shilefumaoqu/suming-first-principles?style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -20,10 +20,10 @@
 ![第一性原理六步推导流程](docs/assets/first-principles-flow.svg)
 
 ```bash
-npx skills add try-suming/suming-first-principles
+npx skills add shilefumaoqu/suming-first-principles
 ```
 
-当前版本：0.3.4
+当前版本：0.3.5
 
 ## 效果示例
 
@@ -85,8 +85,8 @@ $suming-first-principles 拆解“工作流自动化”的本质、成立条件�
 ## 安装
 
 ```bash
-npx skills add try-suming/suming-first-principles
-npx skills add try-suming/suming-first-principles --list
+npx skills add shilefumaoqu/suming-first-principles
+npx skills add shilefumaoqu/suming-first-principles --list
 python3 /path/to/validate_skill.py .
 ```
 
