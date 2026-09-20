@@ -1,0 +1,386 @@
+{
+  "ok": true,
+  "threshold": 0.75,
+  "description_concepts": [
+    "authoring_action",
+    "explicit_skill",
+    "first_principles",
+    "task_or_concept"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 28,
+    "passed": 28,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "$suming-first-principles 帮我从第一性原理判断，要不要搭建一个个人工作台。",
+        "family": "explicit_task_judgment",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请用第一性原理分析：这个成熟的自动化方案真的适合我的场景吗？",
+        "family": "mature_solution_check",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 拆解一下‘工作流自动化’这个概念的本质、成立条件和边界。",
+        "family": "explicit_concept_decomposition",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "我不知道这个任务到底有没有必要做，想从真实目标和基本事实重新推导。",
+        "family": "unclear_task",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "这个方案大家都在用，但我担心不可控，请用第一性原理检查它的前提和失败代价。",
+        "family": "controllability_check",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 用双向钢人论证判断这个升级方案是否值得。",
+        "family": "explicit_bidirectional_steelman",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 在自建飞书机器人前，先推导最低需求，再判断复用、最小改造还是自建。",
+        "family": "minimum_need_before_prior_art",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 判断一句话讲懂和苏格拉底提问两个学习 Skill 是否应该融合。",
+        "family": "skill_overlap",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles Waza 最近很少用，这足以证明应该卸载吗？",
+        "family": "low_frequency_cleanup",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles GitHub 有没有更接近这个需求的现成 Skill？实际搜索后再判断。",
+        "family": "bounded_github_search",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 这次改名会影响哪些其他 Skill？只查直接关系。",
+        "family": "direct_skill_impact",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 这个免费工具只试一天，要不要现在试？",
+        "family": "reversible_choice",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 我倾向辞职创业，但很难回退，请帮我判断。",
+        "family": "consequential_choice",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 前面想合并，后来我明确决定分开，请按最新要求重新判断。",
+        "family": "latest_constraint",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming-first-principles 判断这个 Skill 本身还值不值得改；今天是否继续交给 $suming。",
+        "family": "suming_timing_boundary",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "authoring_action",
+          "explicit_skill",
+          "first_principles",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "请用通俗方式给我讲讲什么是工作流自动化，我是零基础。",
+        "family": "ordinary_learning",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "task_or_concept"
+        ],
+        "negative_pattern": "零基础"
+      },
+      {
+        "prompt": "帮我澄清这个产品的用户、MVP范围和成功标准。",
+        "family": "product_discovery",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请直接用 Python 实现这个明确的 CSV 导入功能。",
+        "family": "direct_coding",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把这篇英文文章翻译成中文。",
+        "family": "translation_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "翻译"
+      },
+      {
+        "prompt": "请总结这段会议记录。",
+        "family": "summary_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "直接去 GitHub 搜索飞书机器人项目并列出 Stars 和更新时间。",
+        "family": "external_search_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "你觉得两个学习 Skill 要不要融合？",
+        "family": "ordinary_judgment_without_explicit_invocation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "authoring_action",
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "今天先做发布还是继续改 Skill？",
+        "family": "suming_priority_request",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "方案已经确认，开始执行。",
+        "family": "execution_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "task_or_concept"
+        ],
+        "negative_pattern": "开始执行"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "我想学习第一性原理，请从高中生能懂的方式教我。",
+        "family": "learning_request",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "first_principles"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "我有一个模糊产品想法，先帮我做需求探索。",
+        "family": "product_discovery_neighbor",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "这个方案已经确定了，直接帮我写实现计划。",
+        "family": "implementation_neighbor",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "task_or_concept"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "$suming 看看我今天是不是又跑偏了。",
+        "family": "personal_operations_neighbor",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      }
+    ]
+  }
+}

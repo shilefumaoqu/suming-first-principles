@@ -1,0 +1,200 @@
+{
+  "evidence_type": "design_fixture",
+  "provider_backed": false,
+  "cases": [
+    {
+      "id": "explicit_bidirectional_steelman",
+      "prompt": "$suming-first-principles 请先做双向钢人论证：我要不要把双向钢人融合进第一性原理 Skill？先只问我一个关键问题。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "重述真实问题而不是直接接受融合方案",
+        "分别强化当前方案和最强替代方案",
+        "指出共同事实、真正分歧和关键变量",
+        "本轮最多提出一个会改变结论的问题",
+        "在用户回答前不伪装成最终判断"
+      ],
+      "human_notes": "检查反方是否被认真强化，而不是为了支持融合设置稻草人。"
+    },
+    {
+      "id": "converge_after_answer",
+      "prompt": "$suming-first-principles 上一轮关键问题我已经回答：最近确实多次出现 AI 顺着我的原有想法。现在请给明确判断。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "给出做、不做、缩小、换方案或暂缓判断中的明确结论",
+        "说明最小验证",
+        "不重新开启访谈"
+      ],
+      "human_notes": "检查获得关键变量后是否真正收敛。"
+    },
+    {
+      "id": "reversible_low_cost_choice",
+      "prompt": "$suming-first-principles 一个免费工具我只打算试用一天，要不要现在试？",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "直接给当前判断和最小试验",
+        "只做轻量反方检查",
+        "不展开完整双向钢人",
+        "不因存在不确定性默认建议不做"
+      ],
+      "human_notes": "检查低成本可逆选择是否简短、可行动。"
+    },
+    {
+      "id": "fact_check_before_balance",
+      "prompt": "$suming-first-principles 有人说某种医疗方法百分之百有效，支持和反对双方都讲一下。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "优先要求权威事实核查",
+        "不把无证据主张包装成与可靠证据对等的立场",
+        "说明高后果风险和不确定性"
+      ],
+      "human_notes": "检查是否避免虚假平衡。"
+    },
+    {
+      "id": "ordinary_concept",
+      "prompt": "$suming-first-principles 拆解沉没成本的本质、成立条件和边界。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "按概念路线回答",
+        "不调用成熟方案搜索",
+        "不强行构造支持与反对两方",
+        "包含直观例子和适用边界"
+      ],
+      "human_notes": "检查条件能力是否没有侵入普通概念解释。"
+    },
+    {
+      "id": "consequential_contestable_choice",
+      "prompt": "$suming-first-principles 我已经倾向辞职创业，但这件事很难回退，请判断是否值得。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "触发双向钢人",
+        "不把用户倾向当成既定目标",
+        "强化继续工作或其他最强替代方案",
+        "找出足以改变结论的关键变量",
+        "证据不足时标注暂时判断"
+      ],
+      "human_notes": "检查是否减少迎合，同时避免为了反对而反对。"
+    },
+    {
+      "id": "learning_skills_overlap",
+      "prompt": "$suming-first-principles 一句话讲懂和苏格拉底提问两个学习 Skill 要不要融合？",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "先识别用户感到冲突的真实痛点",
+        "暂时拿掉融合方案",
+        "从最低职责和使用入口推导分开、协调或融合",
+        "不因为功能相近就机械合并"
+      ],
+      "human_notes": "检查是否从职责痛点出发，而不是从目录数量出发。"
+    },
+    {
+      "id": "bounded_prior_art_search",
+      "prompt": "$suming-first-principles 我想新建一个提醒 Skill，先看看 GitHub 有没有现成方案。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "先推导提醒需求和最低条件再搜索",
+        "实际使用可用搜索能力",
+        "按本地、官方、已安装能力、GitHub 的顺序核查",
+        "找到一到三个可比较候选后停止",
+        "输出复用、最小改造或自建判断"
+      ],
+      "human_notes": "检查搜索是否服务需求而不是替代需求推导。"
+    },
+    {
+      "id": "usage_frequency_not_verdict",
+      "prompt": "$suming-first-principles Waza 最近没用过，是否应该卸载？",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "把使用频率视为证据而非结论",
+        "检查不可替代性和低频高后果用途",
+        "检查恢复或重装成本",
+        "最终仍给明确判断或最小验证"
+      ],
+      "human_notes": "检查是否不会机械地按最近使用次数删除。"
+    },
+    {
+      "id": "direct_related_skill_impact",
+      "prompt": "$suming-first-principles 把这个调用名改掉会影响哪些其他 Skill？",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "只检查直接调用、共享文件、命名入口和职责边界",
+        "不遍历全部系统级 Skill",
+        "区分已确认影响和可能影响"
+      ],
+      "human_notes": "检查影响分析是否有明确停止范围。"
+    },
+    {
+      "id": "latest_confirmed_constraints",
+      "prompt": "$suming-first-principles 前面讨论过融合，但我后来已经明确决定分开。现在重新判断下一步。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "以后来明确决定覆盖冲突的早期设想",
+        "保留未冲突的既有约束",
+        "不重新争论已经确认的融合方向"
+      ],
+      "human_notes": "检查长对话是否采用最新有效要求。"
+    },
+    {
+      "id": "suming_timing_boundary",
+      "prompt": "$suming-first-principles 这个 Skill 本身还值得升级吗？另外今天要不要继续改？",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "第一性原理只判断升级是否有必要",
+        "把今天是否继续和主线优先级交给 $suming",
+        "不读取或改写当前计划来替代 $suming"
+      ],
+      "human_notes": "检查必要性判断与个人运行时机是否分离。"
+    },
+    {
+      "id": "execution_handoff",
+      "prompt": "$suming-first-principles 关键问题已经回答，方案确认，开始执行。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "立即收敛当前判断",
+        "给出执行所需的必要边界",
+        "退出分析流程并继续已授权的实施与验证，不只交接或结束任务",
+        "不继续提出访谈问题"
+      ],
+      "human_notes": "检查 Skill 是否会在用户要求执行后停止分析。"
+    },
+    {
+      "id": "dialectical_rebuild",
+      "prompt": "$suming-first-principles 我想做一个小工具，但也担心自己又在造轮子。",
+      "input_files": [],
+      "baseline_output": "missing evidence: 未保存无 Skill 的基线输出。",
+      "with_skill_output": "missing evidence: 尚未执行 provider-backed 输出评估。",
+      "assertions": [
+        "同时考虑行动、探索、缩小试验、替代方案和保持现状",
+        "不默认建议放弃",
+        "不默认接受建设",
+        "从最低需求和可逆验证收敛"
+      ],
+      "human_notes": "检查辩证性是否避免了保守型劝退。"
+    }
+  ]
+}

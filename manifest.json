@@ -1,0 +1,22 @@
+{
+  "name": "suming-first-principles",
+  "version": "0.3.1",
+  "owner": "Ye",
+  "updated_at": "2026-09-07",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "personal-system",
+  "context_budget_tier": "light",
+  "review_cadence": "on feedback",
+  "upstream_inspiration": "suming-meta-skill: reusable skill packaging, trigger boundaries, and evidence-bound validation",
+  "intent": {
+    "job_to_be_done": "在用户显式调用时，从真实痛点和基本事实推导最低需求，拿掉现成方案后重建可验证的任务、方案或概念判断。",
+    "target_users": ["需要判断任务、方案、系统或概念的个人用户"],
+    "inputs": ["用户显式调用后的任务、方案、问题或概念", "当前可见对话上下文", "建设类问题按需取得的本地或外部事实"],
+    "outputs": ["精简任务或方案判断", "建设类问题的有界候选核查", "概念边界说明", "条件触发的双向钢人", "最小验证动作"],
+    "exclusions": ["自动监控", "普通教学讲解", "产品需求访谈", "当前时机与优先级管理", "路径已明确的直接执行", "摘要翻译", "单纯事实搜索", "遍历无关 Skill", "把未核实事实包装成确定结论"]
+  },
+  "target_platforms": ["codex-desktop", "codex-cli", "codex-ide"],
+  "release_gates": ["quick_validate", "validate_skill", "trigger_eval", "document_contract_review", "install_check"],
+  "evidence_boundary": "本地结构、触发边界、静态行为契约和 3 个公开候选的只读核查可验证；真实模型输出改善、跨宿主显式调用稳定性和 provider-backed 对比仍为 missing evidence。"
+}

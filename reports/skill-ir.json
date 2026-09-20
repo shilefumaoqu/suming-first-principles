@@ -1,0 +1,159 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-09-07",
+  "package": {
+    "name": "suming-first-principles",
+    "version": "0.3.1",
+    "owner": "Ye",
+    "maturity_tier": "production",
+    "lifecycle_stage": "personal-system",
+    "upstream_inspiration": "suming-meta-skill: reusable skill packaging, trigger boundaries, and evidence-bound validation",
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "仅在用户显式调用 $suming-first-principles，或明确要求使用第一性原理时，判断任务、方案、系统或概念：寻找真实痛点，区分事实、约束、决定、假设和未知，暂时拿掉当前方案，推导最低需求，再重建可验证的选择。建设类问题在需求明确后才核查本地、官方、已安装能力、GitHub 与真实案例。普通教学、产品需求访谈、摘要翻译、单纯事实搜索或路径已明确的执行任务不使用。",
+    "job_to_be_done": "在用户显式调用时，从真实痛点和基本事实推导最低需求，拿掉现成方案后重建可验证的任务、方案或概念判断。",
+    "target_users": [
+      "需要判断任务、方案、系统或概念的个人用户"
+    ],
+    "inputs": [
+      "用户显式调用后的任务、方案、问题或概念",
+      "当前可见对话上下文",
+      "建设类问题按需取得的本地或外部事实"
+    ],
+    "outputs": [
+      "精简任务或方案判断",
+      "建设类问题的有界候选核查",
+      "概念边界说明",
+      "条件触发的双向钢人",
+      "最小验证动作"
+    ],
+    "exclusions": [
+      "自动监控",
+      "普通教学讲解",
+      "产品需求访谈",
+      "当前时机与优先级管理",
+      "路径已明确的直接执行",
+      "摘要翻译",
+      "单纯事实搜索",
+      "遍历无关 Skill",
+      "把未核实事实包装成确定结论"
+    ],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "$suming-first-principles 帮我从第一性原理判断，要不要搭建一个个人工作台。",
+      "请用第一性原理分析：这个成熟的自动化方案真的适合我的场景吗？",
+      "$suming-first-principles 拆解一下‘工作流自动化’这个概念的本质、成立条件和边界。",
+      "我不知道这个任务到底有没有必要做，想从真实目标和基本事实重新推导。",
+      "这个方案大家都在用，但我担心不可控，请用第一性原理检查它的前提和失败代价。",
+      "$suming-first-principles 用双向钢人论证判断这个升级方案是否值得。",
+      "$suming-first-principles 在自建飞书机器人前，先推导最低需求，再判断复用、最小改造还是自建。",
+      "$suming-first-principles 判断一句话讲懂和苏格拉底提问两个学习 Skill 是否应该融合。",
+      "$suming-first-principles Waza 最近很少用，这足以证明应该卸载吗？",
+      "$suming-first-principles GitHub 有没有更接近这个需求的现成 Skill？实际搜索后再判断。",
+      "$suming-first-principles 这次改名会影响哪些其他 Skill？只查直接关系。",
+      "$suming-first-principles 这个免费工具只试一天，要不要现在试？",
+      "$suming-first-principles 我倾向辞职创业，但很难回退，请帮我判断。",
+      "$suming-first-principles 前面想合并，后来我明确决定分开，请按最新要求重新判断。",
+      "$suming-first-principles 判断这个 Skill 本身还值不值得改；今天是否继续交给 $suming。"
+    ],
+    "should_not_trigger": [
+      "请用通俗方式给我讲讲什么是工作流自动化，我是零基础。",
+      "帮我澄清这个产品的用户、MVP范围和成功标准。",
+      "请直接用 Python 实现这个明确的 CSV 导入功能。",
+      "把这篇英文文章翻译成中文。",
+      "请总结这段会议记录。",
+      "直接去 GitHub 搜索飞书机器人项目并列出 Stars 和更新时间。",
+      "你觉得两个学习 Skill 要不要融合？",
+      "今天先做发布还是继续改 Skill？",
+      "方案已经确认，开始执行。"
+    ],
+    "near_neighbor": [
+      "我想学习第一性原理，请从高中生能懂的方式教我。",
+      "我有一个模糊产品想法，先帮我做需求探索。",
+      "这个方案已经确定了，直接帮我写实现计划。",
+      "$suming 看看我今天是不是又跑偏了。"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [],
+    "scripts": [],
+    "evals": [
+      "evals\\output_cases.json",
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\creation-handoff.md",
+      "reports\\output-eval.json",
+      "reports\\prior-art-research.md",
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "codex-desktop",
+      "codex-cli",
+      "codex-ide",
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {
+      "context": "inline",
+      "shell": "optional-for-fact-verification"
+    },
+    "trust": {
+      "source_tier": "local-reconstructed",
+      "remote_inline_execution": "forbid",
+      "generated_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "optional-for-prior-art-and-authoritative-fact-checking",
+      "file_write": "none-by-default",
+      "subprocess": "none-required",
+      "interactive": "one-high-impact-question-at-a-time"
+    },
+    "degradation": {
+      "codex-desktop": "use explicit invocation and current visible context",
+      "codex-cli": "use explicit invocation and current visible context",
+      "codex-ide": "use explicit invocation and current visible context"
+    }
+  },
+  "gates": {
+    "production": [
+      "explicit invocation only",
+      "real pain before proposed solution",
+      "fact constraint decision assumption separation",
+      "minimum requirement before prior-art search",
+      "bounded one-to-three candidate search",
+      "reuse adapt or build decision",
+      "dialectical alternatives without conservative default",
+      "usage frequency is not a verdict",
+      "directly related Skill impact only",
+      "risk-adapted counter-evidence",
+      "conditional bidirectional steelman",
+      "latest confirmed constraints win",
+      "certainty matched to evidence",
+      "execution handoff without further interview",
+      "suming timing boundary"
+    ]
+  },
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}
