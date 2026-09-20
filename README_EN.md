@@ -17,13 +17,13 @@
   <a href="#core-flow">Core flow</a> · <a href="#boundaries">Boundaries</a>
 </p>
 
-![Six-step first-principles reasoning flow](docs/assets/first-principles-flow.svg)
+![Six-step first-principles reasoning flow](docs/assets/first-principles-flow-en.svg)
 
 ```bash
 npx skills add try-suming/suming-first-principles
 ```
 
-Current version: 0.3.3
+Current version: 0.3.4
 
 ## Example
 

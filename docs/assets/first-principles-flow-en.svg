@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Six-step first-principles reasoning flow</title>
+  <desc id="desc">A six-step flow from the real pain and basic facts to removing the current solution, deriving minimum needs, rebuilding options, and running a minimum test.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#1e293b" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font: 700 24px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f172a; }
+      .phase { font: 600 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6366f1; letter-spacing: .08em; }
+      .step { font: 700 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #172033; }
+      .hint { font: 400 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #64748b; }
+      .footer { font: 400 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #64748b; }
+      .num { font: 700 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #fff; }
+      .card { fill: #fff; stroke: #cbd5e1; stroke-width: 1; }
+      .card-accent { fill: #f5f3ff; stroke: #8b5cf6; stroke-width: 1.5; }
+      .line { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <text x="40" y="45" class="title">Start with the problem, not the current solution</text>
+  <text x="40" y="76" class="phase">UNDERSTAND</text>
+  <line x1="40" y1="84" x2="392" y2="84" stroke="#c7d2fe" stroke-width="3"/>
+  <text x="424" y="76" class="phase">DERIVE</text>
+  <line x1="424" y1="84" x2="776" y2="84" stroke="#ddd6fe" stroke-width="3"/>
+  <text x="808" y="76" class="phase">REBUILD &amp; TEST</text>
+  <line x1="808" y1="84" x2="1160" y2="84" stroke="#c7d2fe" stroke-width="3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="112" width="160" height="128" rx="16" class="card"/>
+    <rect x="232" y="112" width="160" height="128" rx="16" class="card"/>
+    <rect x="424" y="112" width="160" height="128" rx="16" class="card-accent"/>
+    <rect x="616" y="112" width="160" height="128" rx="16" class="card-accent"/>
+    <rect x="808" y="112" width="160" height="128" rx="16" class="card"/>
+    <rect x="1000" y="112" width="160" height="128" rx="16" class="card"/>
+  </g>
+
+  <g>
+    <circle cx="64" cy="136" r="13" fill="#6366f1"/><text x="64" y="140" text-anchor="middle" class="num">1</text>
+    <circle cx="256" cy="136" r="13" fill="#6366f1"/><text x="256" y="140" text-anchor="middle" class="num">2</text>
+    <circle cx="448" cy="136" r="13" fill="#8b5cf6"/><text x="448" y="140" text-anchor="middle" class="num">3</text>
+    <circle cx="640" cy="136" r="13" fill="#8b5cf6"/><text x="640" y="140" text-anchor="middle" class="num">4</text>
+    <circle cx="832" cy="136" r="13" fill="#6366f1"/><text x="832" y="140" text-anchor="middle" class="num">5</text>
+    <circle cx="1024" cy="136" r="13" fill="#6366f1"/><text x="1024" y="140" text-anchor="middle" class="num">6</text>
+  </g>
+
+  <text x="120" y="174" text-anchor="middle" class="step">Real pain</text>
+  <text x="120" y="199" text-anchor="middle" class="hint">What must change</text>
+  <text x="312" y="174" text-anchor="middle" class="step">Basic facts</text>
+  <text x="312" y="199" text-anchor="middle" class="hint">Facts and constraints</text>
+  <text x="504" y="174" text-anchor="middle" class="step">Remove solution</text>
+  <text x="504" y="199" text-anchor="middle" class="hint">Escape solution lock-in</text>
+  <text x="696" y="174" text-anchor="middle" class="step">Minimum needs</text>
+  <text x="696" y="199" text-anchor="middle" class="hint">What must be true</text>
+  <text x="888" y="174" text-anchor="middle" class="step">Rebuild options</text>
+  <text x="888" y="199" text-anchor="middle" class="hint">Reuse, adapt, or build</text>
+  <text x="1080" y="174" text-anchor="middle" class="step">Minimum test</text>
+  <text x="1080" y="199" text-anchor="middle" class="hint">Lowest-cost learning</text>
+
+  <line x1="202" y1="176" x2="224" y2="176" class="line"/>
+  <line x1="394" y1="176" x2="416" y2="176" class="line"/>
+  <line x1="586" y1="176" x2="608" y2="176" class="line"/>
+  <line x1="778" y1="176" x2="800" y2="176" class="line"/>
+  <line x1="970" y1="176" x2="992" y2="176" class="line"/>
+
+  <text x="600" y="282" text-anchor="middle" class="footer">Derive needs before researching solutions; let evidence decide whether to continue, adapt, or stop.</text>
+</svg>
