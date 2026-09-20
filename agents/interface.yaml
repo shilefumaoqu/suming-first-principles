@@ -1,0 +1,52 @@
+interface:
+  display_name: "第一性原理"
+  short_description: "从真实痛点和基本事实推导最低需求，再重建可验证选择"
+  default_prompt: "Use $suming-first-principles only when explicitly invoked. Derive the real goal, facts, constraints and minimum requirements before rebuilding alternatives; balance action and exploration against cost and reversibility. Reuse sufficient current evidence; search external sources when needed or requested, with a default shortlist of 1-3 candidates. Honor the user's actual audit scope and latest confirmed constraints. Ask only consequential unresolved questions; use steelmanning when risk or the request warrants it. Analysis-only stays read-only. When execution is authorized, stop interviewing and continue implementation and verification rather than ending the task. Route scheduling decisions to $suming."
+
+policy:
+  allow_implicit_invocation: false
+
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "codex-desktop"
+    - "codex-cli"
+    - "codex-ide"
+    - "openai"
+    - "claude"
+    - "generic"
+    - "agent-skills-compatible"
+  execution:
+    context: "inline"
+    shell: "optional-for-fact-verification"
+  trust:
+    source_tier: "local-reconstructed"
+    remote_inline_execution: "forbid"
+    generated_claims: "evidence-bound"
+  permissions:
+    network: "optional-for-prior-art-and-authoritative-fact-checking"
+    file_write: "none-by-default"
+    subprocess: "none-required"
+    interactive: "one-high-impact-question-at-a-time"
+  degradation:
+    codex-desktop: "use explicit invocation and current visible context"
+    codex-cli: "use explicit invocation and current visible context"
+    codex-ide: "use explicit invocation and current visible context"
+
+gates:
+  production:
+    - "explicit invocation only"
+    - "real pain before proposed solution"
+    - "fact constraint decision assumption separation"
+    - "minimum requirement before prior-art search"
+    - "bounded one-to-three candidate search"
+    - "reuse adapt or build decision"
+    - "dialectical alternatives without conservative default"
+    - "usage frequency is not a verdict"
+    - "directly related Skill impact only"
+    - "risk-adapted counter-evidence"
+    - "conditional bidirectional steelman"
+    - "latest confirmed constraints win"
+    - "certainty matched to evidence"
+    - "execution handoff without further interview"
+    - "suming timing boundary"

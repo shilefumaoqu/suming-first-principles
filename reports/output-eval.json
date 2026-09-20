@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "evaluated_at": "2026-08-30",
+  "evidence_type": "static_contract_review",
+  "provider_backed": false,
+  "checks": {
+    "version_aligned": true,
+    "explicit_invocation_gate": true,
+    "real_pain_before_solution": true,
+    "minimum_requirement_before_prior_art": true,
+    "bounded_candidate_search": true,
+    "dialectical_non_conservative_rebuild": true,
+    "usage_frequency_not_verdict": true,
+    "direct_skill_impact_scope": true,
+    "risk_adapted_counter_evidence": true,
+    "latest_confirmed_constraints": true,
+    "suming_timing_boundary": true,
+    "execution_handoff": true,
+    "output_cases_complete": true,
+    "output_case_ids_unique": true,
+    "trigger_eval_passed": true
+  },
+  "output_cases": 14,
+  "trigger_cases": 28,
+  "limitations": [
+    "本报告只证明静态行为契约、文档一致性和回归用例完整，不证明真实模型输出已经改善。",
+    "baseline_output 与 with_skill_output 尚未进行 provider-backed 对比，属于 missing evidence。",
+    "尚未进行独立人工盲测或跨宿主调用测试。"
+  ]
+}

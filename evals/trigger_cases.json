@@ -1,0 +1,45 @@
+{
+  "recommended_threshold": 0.75,
+  "description_required_concepts": ["explicit_skill", "first_principles", "task_or_concept", "authoring_action"],
+  "positive_concepts": {
+    "first_principles": ["first principles", "第一性原理", "基本事实", "底层条件", "真实目标", "真实痛点", "最低需求", "从底层", "重新推导"],
+    "task_or_concept": ["任务", "方案", "问题", "概念", "工具", "Skill", "工作台", "工作流", "系统", "workflow", "concept", "solution"],
+    "authoring_action": ["拆解", "判断", "分析", "推导", "检查", "重新分析", "是否值得", "适不适合", "本质", "边界", "融合", "卸载", "decompose", "analyze", "decide"],
+    "explicit_skill": ["$suming-first-principles", "suming-first-principles"]
+  },
+  "negative_patterns": ["普通学习", "讲给我听", "零基础", "教学", "产品需求", "MVP", "直接写代码", "直接执行", "开始执行", "翻译", "摘要", "自动监控", "不需要拆解"],
+  "should_trigger": [
+    {"text": "$suming-first-principles 帮我从第一性原理判断，要不要搭建一个个人工作台。", "family": "explicit_task_judgment"},
+    {"text": "请用第一性原理分析：这个成熟的自动化方案真的适合我的场景吗？", "family": "mature_solution_check"},
+    {"text": "$suming-first-principles 拆解一下‘工作流自动化’这个概念的本质、成立条件和边界。", "family": "explicit_concept_decomposition"},
+    {"text": "我不知道这个任务到底有没有必要做，想从真实目标和基本事实重新推导。", "family": "unclear_task"},
+    {"text": "这个方案大家都在用，但我担心不可控，请用第一性原理检查它的前提和失败代价。", "family": "controllability_check"},
+    {"text": "$suming-first-principles 用双向钢人论证判断这个升级方案是否值得。", "family": "explicit_bidirectional_steelman"},
+    {"text": "$suming-first-principles 在自建飞书机器人前，先推导最低需求，再判断复用、最小改造还是自建。", "family": "minimum_need_before_prior_art"},
+    {"text": "$suming-first-principles 判断一句话讲懂和苏格拉底提问两个学习 Skill 是否应该融合。", "family": "skill_overlap"},
+    {"text": "$suming-first-principles Waza 最近很少用，这足以证明应该卸载吗？", "family": "low_frequency_cleanup"},
+    {"text": "$suming-first-principles GitHub 有没有更接近这个需求的现成 Skill？实际搜索后再判断。", "family": "bounded_github_search"},
+    {"text": "$suming-first-principles 这次改名会影响哪些其他 Skill？只查直接关系。", "family": "direct_skill_impact"},
+    {"text": "$suming-first-principles 这个免费工具只试一天，要不要现在试？", "family": "reversible_choice"},
+    {"text": "$suming-first-principles 我倾向辞职创业，但很难回退，请帮我判断。", "family": "consequential_choice"},
+    {"text": "$suming-first-principles 前面想合并，后来我明确决定分开，请按最新要求重新判断。", "family": "latest_constraint"},
+    {"text": "$suming-first-principles 判断这个 Skill 本身还值不值得改；今天是否继续交给 $suming。", "family": "suming_timing_boundary"}
+  ],
+  "should_not_trigger": [
+    {"text": "请用通俗方式给我讲讲什么是工作流自动化，我是零基础。", "family": "ordinary_learning"},
+    {"text": "帮我澄清这个产品的用户、MVP范围和成功标准。", "family": "product_discovery"},
+    {"text": "请直接用 Python 实现这个明确的 CSV 导入功能。", "family": "direct_coding"},
+    {"text": "把这篇英文文章翻译成中文。", "family": "translation_only"},
+    {"text": "请总结这段会议记录。", "family": "summary_only"},
+    {"text": "直接去 GitHub 搜索飞书机器人项目并列出 Stars 和更新时间。", "family": "external_search_only"},
+    {"text": "你觉得两个学习 Skill 要不要融合？", "family": "ordinary_judgment_without_explicit_invocation"},
+    {"text": "今天先做发布还是继续改 Skill？", "family": "suming_priority_request"},
+    {"text": "方案已经确认，开始执行。", "family": "execution_only"}
+  ],
+  "near_neighbor": [
+    {"text": "我想学习第一性原理，请从高中生能懂的方式教我。", "family": "learning_request"},
+    {"text": "我有一个模糊产品想法，先帮我做需求探索。", "family": "product_discovery_neighbor"},
+    {"text": "这个方案已经确定了，直接帮我写实现计划。", "family": "implementation_neighbor"},
+    {"text": "$suming 看看我今天是不是又跑偏了。", "family": "personal_operations_neighbor"}
+  ]
+}
