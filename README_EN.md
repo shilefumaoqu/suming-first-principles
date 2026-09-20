@@ -7,9 +7,9 @@
 <p align="center">Rebuild decisions from real needs and basic facts instead of being trapped by the current solution.</p>
 
 <p align="center">
-  <a href="https://github.com/try-suming/suming-first-principles/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/try-suming/suming-first-principles?display_name=tag&sort=semver"></a>
-  <a href="https://github.com/try-suming/suming-first-principles/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/try-suming/suming-first-principles?style=flat-square"></a>
-  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/try-suming/suming-first-principles?style=flat-square"></a>
+  <a href="https://github.com/shilefumaoqu/suming-first-principles/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/shilefumaoqu/suming-first-principles?display_name=tag&sort=semver"></a>
+  <a href="https://github.com/shilefumaoqu/suming-first-principles/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/shilefumaoqu/suming-first-principles?style=flat-square"></a>
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/shilefumaoqu/suming-first-principles?style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -20,10 +20,10 @@
 ![Six-step first-principles reasoning flow](docs/assets/first-principles-flow-en.svg)
 
 ```bash
-npx skills add try-suming/suming-first-principles
+npx skills add shilefumaoqu/suming-first-principles
 ```
 
-Current version: 0.3.4
+Current version: 0.3.5
 
 ## Example
 
@@ -85,8 +85,8 @@ A task or solution analysis usually contains the real goal, basic facts and cons
 ## Install
 
 ```bash
-npx skills add try-suming/suming-first-principles
-npx skills add try-suming/suming-first-principles --list
+npx skills add shilefumaoqu/suming-first-principles
+npx skills add shilefumaoqu/suming-first-principles --list
 python3 /path/to/validate_skill.py .
 ```
 
