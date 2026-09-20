@@ -1,8 +1,8 @@
 {
   "name": "suming-first-principles",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "owner": "Ye",
-  "updated_at": "2026-09-07",
+  "updated_at": "2026-09-20",
   "status": "active",
   "maturity_tier": "production",
   "lifecycle_stage": "personal-system",
@@ -18,5 +18,24 @@
   },
   "target_platforms": ["codex-desktop", "codex-cli", "codex-ide"],
   "release_gates": ["quick_validate", "validate_skill", "trigger_eval", "document_contract_review", "install_check"],
-  "evidence_boundary": "本地结构、触发边界、静态行为契约和 3 个公开候选的只读核查可验证；真实模型输出改善、跨宿主显式调用稳定性和 provider-backed 对比仍为 missing evidence。"
+  "evidence_boundary": "本地结构、触发边界、静态行为契约、公开说明和 3 个公开候选的只读核查可验证；真实模型输出改善、跨宿主显式调用稳定性和 provider-backed 对比仍为 missing evidence。",
+  "publication": {
+    "summary_zh": "从真实痛点和基本事实重建可验证方案。",
+    "summary_en": "Rebuild decisions from real needs and basic facts.",
+    "topics": [
+      "agent-skills",
+      "codex",
+      "first-principles",
+      "decision-making",
+      "problem-solving"
+    ],
+    "audience": ["zh-CN", "en"],
+    "visuals": [
+      {
+        "path": "docs/assets/first-principles-flow.svg",
+        "alt": "第一性原理六步推导流程",
+        "role": "overview"
+      }
+    ]
+  }
 }
